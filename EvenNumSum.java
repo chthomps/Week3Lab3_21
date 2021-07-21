@@ -14,7 +14,7 @@ public class EvenNumSum {
 		value = scan.nextInt();
 		
 		if (value<2) {
-			System.out.println("Please read directions and eenter a valid integer!");
+			System.out.println("Please read directions and renter a valid integer!");
 			value = scan.nextInt();
 		} else
 				System.out.println("The sum of all even integers from 2 to " +value+ "(inclusive) is: ");
