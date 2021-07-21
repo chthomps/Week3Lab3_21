@@ -9,7 +9,7 @@ public class EvenNumSum {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Enter an integer value: ");
+		System.out.println("Enter an integer value: "); //prompts user to enter the ceiling integer value
 		
 		value = scan.nextInt();
 		
@@ -17,10 +17,10 @@ public class EvenNumSum {
 			System.out.println("Please read directions and renter a valid integer!");
 			value = scan.nextInt();
 		} else
-				System.out.println("The sum of all even integers from 2 to " +value+ "(inclusive) is: ");
+			System.out.println("The sum of all even integers from 2 to " +value+ "(inclusive) is: ");
 		
 		for (int count=2; count<=value; count++) {
-			if (count%2 ==0)
+			if (count%2 ==0)    //ensures only even numbers contribute to the summation
 				sum+=count; //adds even counts to update sum
 		}
 		System.out.println(sum);
